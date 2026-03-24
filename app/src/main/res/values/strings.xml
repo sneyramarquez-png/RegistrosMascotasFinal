@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">RegistroMascotas</string>
-    <string name="titulo">Registro de Mascotas</string>
+    <string name="tituloPrincipal">Registro de Mascotas</string>
+    <string name="Integrante1">Alessandra Ramos Candia</string>
+    <string name="Integrante2">Samantha  Neyra Marquez</string>
 </resources>
