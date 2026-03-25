@@ -19,7 +19,10 @@
             android:textStyle="bold"
             android:layout_marginBottom="16dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7DCFB6"
+            android:textColor="#F79256"
+            />
 
 
         <!-- Campos requeridos nivel de usuario -->
@@ -56,7 +59,7 @@
             android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#2DBA8E"
+            android:backgroundTint="#00B2CA"
             android:text="Guardar" />
 
         <!-- Campos requeridos nivel mascotas -->

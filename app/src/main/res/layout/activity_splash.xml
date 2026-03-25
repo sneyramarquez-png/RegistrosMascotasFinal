@@ -6,45 +6,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/AnimationPrincipal"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        app:lottie_fileName="Pets.json"
-        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintVertical_bias="0.496"
         app:lottie_autoPlay="true"
+        app:lottie_fileName="LoveCats.json"
         app:lottie_loop="true" />
 
     <TextView
         android:id="@+id/TituloPrincipalInicio"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="@string/tituloPrincipal"
+        android:layout_marginTop="30dp"
         android:textAlignment="center"
-        android:textColor="#2196F3"
-        android:textSize="34sp"
+        android:textColor="#1D4E89"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/AnimationPrincipal"
         />
 
     <TextView
         android:id="@+id/subtituloIntegrante"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="@string/Integrante1"
         android:textAlignment="center"
+        android:textColor="#F79256"
+        android:textSize="20sp"
+        android:textStyle="normal"
         app:layout_constraintTop_toBottomOf="@+id/TituloPrincipalInicio"
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="@string/Integrante2"
         android:textAlignment="center"
+        android:textColor="#F79256"
+        android:textSize="20sp"
+        android:textStyle="normal"
         app:layout_constraintTop_toBottomOf="@+id/subtituloIntegrante"
         />
 

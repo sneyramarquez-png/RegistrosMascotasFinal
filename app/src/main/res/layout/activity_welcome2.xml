@@ -7,18 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".WelcomeActivity2">
 
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView"
         android:layout_width="250dp"
         android:layout_height="200dp"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/titulo"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:lottie_rawRes="@raw/huellas_animation"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true" />
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
 
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="CatPlaying.json"
+        app:lottie_loop="true" />
 
     <TextView
         android:id="@+id/titulo"
@@ -31,28 +34,27 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319" />
+        app:layout_constraintVertical_bias="0.546" />
 
     <TextView
         android:id="@+id/subtitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registra y consulta tus mascotas en un solo lugar"
-        android:textAlignment="textEnd"
+        android:text="Bienvenido a nuestra aplicación, diseñada para resgistrar  y cuidar la información de tus mascotas de manera sencilla"
+        android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#009688"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
+        android:textColor="#F79256"
+        android:textSize="22sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
-
+        app:layout_constraintVertical_bias="0.772" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">RegistroMascotas</string>
-    <string name="tituloPrincipal">Registro de Mascotas</string>
+    <string name="tituloPrincipal">App de Mascotas</string>
     <string name="Integrante1">Alessandra Ramos Candia</string>
     <string name="Integrante2">Samantha  Neyra Marquez</string>
 
+    <!--Pantalla Botones de Auth-->
+    <string name="btnCrearCuenta">Crear Cuenta</string>
+    <string name="btnAcceder">Acceder</string>
+
+    <!--Pantalla acceso a sesion-->
+    <string name="campoCorreoAcceder">Correo electrónico</string>
+    <string name="campoContrasenaAcceder">Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
 
     <!--Pantalla creacion de cuenta-->
     <string name="campoNombre">Nombre</string>
@@ -11,4 +19,7 @@
     <string name="campoContrasena">Contraseña</string>
     <string name="campoContrasena1">Repita su contraseña</string>
     <string name="btn_account">Crear cuenta</string>
+
+    <!--Boton de cerrar sesion-->
+    <string name="btnFinalizarSesion">Finalizar Sesión</string>
 </resources>

@@ -7,20 +7,33 @@
     android:layout_height="match_parent"
     tools:context=".AuthActivity">
 
+
+
     <Button
-        android:id="@+id/btnInicio"
-        android:layout_width="128dp"
-        android:layout_height="78dp"
-        android:backgroundTint="#3E7EB3"
-        android:lineSpacingExtra="24sp"
-        android:text="Comenzar"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCrearCuenta"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FBD1A2"
+        android:textColor="#1D4E89"
+        />
+    <Button
+        android:id="@+id/btnAcceder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAcceder"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearCuenta"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#7DCFB6"
+        android:textColor="#1D4E89"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

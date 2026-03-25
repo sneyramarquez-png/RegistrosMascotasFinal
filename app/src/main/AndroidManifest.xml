@@ -8,9 +8,11 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.RegistroMascotas">
         <activity
-            android:name=".SuccessActivity"
+            android:name=".AccessActivity"
             android:exported="false" />
-        <!-- Pantalla de registro u logueo -->
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false" /> <!-- Pantalla de registro u logueo -->
         <activity
             android:name=".AuthActivity"
             android:exported="false" /> <!-- Pantalla principal (PRIMERA) -->
