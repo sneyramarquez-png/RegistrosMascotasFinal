@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CreateAccountActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -21,18 +21,53 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+
+        <!-- Campos requeridos nivel de usuario -->
+        <EditText
+            android:id="@+id/campoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/campoNombre"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+        <EditText
+            android:id="@+id/campoCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/campoCorreo"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/campoContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/campoContrasena"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/campoContrasena1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/campoContrasena1"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2DBA8E"
+            android:text="Guardar" />
+
+        <!-- Campos requeridos nivel mascotas -->
+
+        <!--
         <EditText
             android:id="@+id/etNombre"
             android:hint="Nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <EditText
-            android:id="@+id/etEdad"
-            android:hint="Edad"
-            android:inputType="number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
 
         <EditText
             android:id="@+id/etTipo"
@@ -46,7 +81,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#2DBA8E"
             android:text="Guardar" />
-
+        -->
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

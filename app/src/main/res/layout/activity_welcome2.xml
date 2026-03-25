@@ -53,19 +53,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457" />
 
-    <Button
-        android:id="@+id/btnInicio"
-        android:layout_width="128dp"
-        android:layout_height="78dp"
-        android:backgroundTint="#3E7EB3"
-        android:lineSpacingExtra="24sp"
-        android:text="Comenzar"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
