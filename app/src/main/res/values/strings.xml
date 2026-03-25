@@ -3,4 +3,12 @@
     <string name="tituloPrincipal">Registro de Mascotas</string>
     <string name="Integrante1">Alessandra Ramos Candia</string>
     <string name="Integrante2">Samantha  Neyra Marquez</string>
+
+
+    <!--Pantalla creacion de cuenta-->
+    <string name="campoNombre">Nombre</string>
+    <string name="campoCorreo">Correo electrónico</string>
+    <string name="campoContrasena">Contraseña</string>
+    <string name="campoContrasena1">Repita su contraseña</string>
+    <string name="btn_account">Crear cuenta</string>
 </resources>

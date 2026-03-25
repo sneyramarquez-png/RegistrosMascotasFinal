@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "966369471430",
+    "firebase_url": "https://proyectofinal-appmascotas-default-rtdb.firebaseio.com",
+    "project_id": "proyectofinal-appmascotas",
+    "storage_bucket": "proyectofinal-appmascotas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966369471430:android:fc6cb2d22005dbec8b60c7",
+        "android_client_info": {
+          "package_name": "com.example.registromascotas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIabLJ5ypekHZcIpHelyhamNIV77CQGeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
