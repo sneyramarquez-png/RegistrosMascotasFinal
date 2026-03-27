@@ -1,6 +1,8 @@
 package com.example.registromascotas
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -23,12 +25,25 @@ class AccessActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_access)
+        supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.parseColor("#7DCFB6")))
+
+        //cmb
+        // Configurar Toolbar
+        //val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
+        //setSupportActionBar(toolbar)
+        //supportActionBar?.setDisplayShowTitleEnabled(false) // Ocultar título por defecto
+        //cmb
+
+        //supportActionBar?.hide()
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        supportActionBar?.title = "Entrada"
+
+        //supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.title = "Login "
         initVariables()
         acsBtn.setOnClickListener {
             validateData()

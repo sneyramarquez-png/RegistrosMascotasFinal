@@ -1,6 +1,8 @@
 package com.example.registromascotas
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.activity.enableEdgeToEdge
@@ -14,6 +16,9 @@ class SplashActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            supportActionBar?.hide()
+            //supportActionBar?.setDisplayShowTitleEnabled(false)
+            //supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.parseColor("#FBD1A2")))
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets

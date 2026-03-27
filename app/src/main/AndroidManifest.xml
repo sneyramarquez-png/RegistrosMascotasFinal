@@ -12,7 +12,12 @@
             android:exported="false" />
         <activity
             android:name=".SuccessActivity"
-            android:exported="false" /> <!-- Pantalla de registro u logueo -->
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+
+            /> <!-- Pantalla de registro u logueo -->
+        <!-- transparencia del tobar para mantener opcion de finalizar  -->
         <activity
             android:name=".AuthActivity"
             android:exported="false" /> <!-- Pantalla principal (PRIMERA) -->
@@ -31,6 +36,9 @@
         <activity
             android:name=".CreateAccountActivity"
             android:exported="false" />
+
+
+
     </application>
 
 </manifest>

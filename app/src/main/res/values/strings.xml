@@ -18,6 +18,7 @@
     <string name="campoCorreo">Correo electrónico</string>
     <string name="campoContrasena">Contraseña</string>
     <string name="campoContrasena1">Repita su contraseña</string>
+    <string name="campoNombreMascota">Nombre de su mascota</string>
     <string name="btn_account">Crear cuenta</string>
 
     <!--Boton de cerrar sesion-->

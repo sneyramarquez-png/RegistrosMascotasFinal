@@ -10,6 +10,7 @@ class WelcomeActivity2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_welcome2)
         showSplash()
     }

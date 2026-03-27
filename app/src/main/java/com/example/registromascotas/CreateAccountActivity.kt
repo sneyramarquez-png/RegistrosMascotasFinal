@@ -22,6 +22,8 @@ class CreateAccountActivity : AppCompatActivity() {
     private lateinit var contrasenaUsuario: EditText
     private lateinit var contrasenaUsuario1: EditText
 
+    private lateinit var nombreMascota: EditText
+
     private lateinit var btnCreateAccount: Button
     private lateinit var auth: FirebaseAuth
 
@@ -32,6 +34,7 @@ class CreateAccountActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_createaccount)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            supportActionBar?.hide()
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -52,7 +55,7 @@ class CreateAccountActivity : AppCompatActivity() {
         correoUsuario = findViewById(R.id.campoCorreo)
         contrasenaUsuario = findViewById(R.id.campoContrasena)
         contrasenaUsuario1 = findViewById(R.id.campoContrasena1)
-        //password1User = findViewById(R.id.input_password1)
+        nombreMascota = findViewById(R.id.campoNombreMascota)
         btnCreateAccount = findViewById(R.id.btnGuardar)
         auth = FirebaseAuth.getInstance()
     }
@@ -62,6 +65,7 @@ class CreateAccountActivity : AppCompatActivity() {
         val correo = correoUsuario.text.toString().trim()
         val contrasena = contrasenaUsuario.text.toString().trim()
         val contrasena1 = contrasenaUsuario1.text.toString().trim()
+        val nombreMascota1 = nombreMascota.text.toString().trim()
        // val email = emailUser.text.toString().trim()
        // val password =  passwordUser.text.toString().trim()
         //val confirmPaswword = password1User.text.toString().trim()
@@ -84,24 +88,17 @@ class CreateAccountActivity : AppCompatActivity() {
                 contrasenaUsuario1.error = "Ingresa nuevamente contraseña"
                 contrasenaUsuario1.requestFocus()
             }
-            /*
-            password.isEmpty() -> {
-                passwordUser.error = "Ingresa su contraseña"
-                passwordUser.requestFocus()
+
+            nombreMascota1.isEmpty() -> {
+                nombreMascota.error = "Ingresa el nombre de su mascota"
+                nombreMascota.requestFocus()
             }
 
-
-
-            confirmPaswword.isEmpty() -> {
-                password1User.error = "Repita su contraseña"
-                password1User.requestFocus()
+            contrasena != contrasena1 -> {
+                contrasenaUsuario1.error = "Contraseñas no coinciden"
+                contrasenaUsuario1.requestFocus()
             }
 
-            password != confirmPaswword -> {
-                password1User.error = "Contraseñas no coinciden"
-                password1User.requestFocus()
-            }
-                */
             else ->{
                 crearCuenta(correo, contrasena)
             }
@@ -118,11 +115,12 @@ class CreateAccountActivity : AppCompatActivity() {
 
             val nameText = nombreUsuario.text.toString().trim()
             val emailText = correoUsuario.text.toString().trim()
+            val namePetText = nombreMascota.text.toString().trim()
             val userMap = hashMapOf(
                 "uid" to uid,
                 "username" to nameText,
                 "email" to emailText,
-                "image" to "",
+                "petname" to namePetText,   //campo requerido nuevo nombre de mascota
                 "search" to nameText.lowercase()
             )
 

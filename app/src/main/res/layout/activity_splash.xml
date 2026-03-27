@@ -5,7 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="#7DCFB6"
+    >
+    <!-- 🔵 Fondo curvo superior -->
+
+    <View
+        android:id="@+id/topCurve"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:background="@drawable/bg_top_curve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/AnimationPrincipal"
@@ -14,55 +29,56 @@
         android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintVertical_bias="0.496"
+        app:layout_constraintVertical_bias="0.0"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="LoveCats.json"
+        app:lottie_fileName="catPlayingVerde.json"
         app:lottie_loop="true" />
 
     <TextView
         android:id="@+id/TituloPrincipalInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
         android:text="@string/tituloPrincipal"
-        android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:textColor="#1D4E89"
-        android:textSize="36sp"
+        android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/AnimationPrincipal"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnimationPrincipal" />
 
     <TextView
         android:id="@+id/subtituloIntegrante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="56dp"
         android:text="@string/Integrante1"
         android:textAlignment="center"
-        android:textColor="#F79256"
-        android:textSize="20sp"
-        android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/TituloPrincipalInicio"
-        />
+        android:textColor="#1D4E89"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloPrincipalInicio" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
         android:text="@string/Integrante2"
         android:textAlignment="center"
-        android:textColor="#F79256"
-        android:textSize="20sp"
-        android:textStyle="normal"
-        app:layout_constraintTop_toBottomOf="@+id/subtituloIntegrante"
-        />
+        android:textColor="#1D4E89"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtituloIntegrante" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

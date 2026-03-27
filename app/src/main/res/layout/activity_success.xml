@@ -5,20 +5,60 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SuccessActivity">
+    android:background="#7DCFB6"
+    tools:context=".SuccessActivity"
+    android:textColor="#1D4E89"
+    >
+
+    <!-- android:background="@android:color/transparent" -->
+
+    <include
+        android:id="@+id/toolbarSuccess"
+        layout="@layout/toolbar_success"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/txtNombreUsuario"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="pantallazo despues del registro y login,agregar algo referente a mascotas img etc,etc......."
-
-        android:layout_marginTop="30dp"
-        android:textAlignment="center"
-        android:textColor="#2196F3"
-        android:textSize="34sp"
-        android:textStyle="bold"
-
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSuccess"
+        app:layout_constraintVertical_bias="0.244"
+        android:textAlignment="center"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtNombreMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/txtNombreUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="218dp"
+        android:layout_height="236dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mascota"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreMascota"
+        app:layout_constraintVertical_bias="0.535" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
